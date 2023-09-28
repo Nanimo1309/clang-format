@@ -92,9 +92,9 @@ ForEachMacros: []
 IfMacros: []
 IncludeBlocks: Regroup
 IncludeCategories:
-    - Regex: "^\""
-      Priority: 1
     - Regex: "^<"
+      Priority: 1
+    - Regex: "^\""
       Priority: 2
 IncludeIsMainRegex: "(Test)?$"
 IncludeIsMainSourceRegex: ""
