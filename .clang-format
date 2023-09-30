@@ -1,3 +1,4 @@
+BasedOnStyle: LLVM
 Language: Cpp
 
 AccessModifierOffset: -4
@@ -51,6 +52,7 @@ BitFieldColonSpacing: After
 BraceWrapping:
     AfterCaseLabel: true
     AfterClass: true
+    AfterControlStatement: Always
     AfterEnum: true
     AfterFunction: true
     AfterNamespace: true
@@ -61,7 +63,7 @@ BraceWrapping:
     BeforeElse: true
     BeforeLambdaBody: false
     BeforeWhile: false
-    IndentBraces: true
+    IndentBraces: false
     SplitEmptyFunction: false
     SplitEmptyRecord: false
     SplitEmptyNamespace: false
@@ -135,7 +137,17 @@ PackConstructorInitializers: Never
 
 PointerAlignment: Left
 QualifierAlignment: Custom
-QualifierOrder: ["friend", "static", "constexpr", "const", "inline", "volatile", "restrict", "type"]
+QualifierOrder:
+    [
+        "friend",
+        "static",
+        "constexpr",
+        "const",
+        "inline",
+        "volatile",
+        "restrict",
+        "type",
+    ]
 ReferenceAlignment: Left
 ReflowComments: true
 RemoveBracesLLVM: true
@@ -173,9 +185,9 @@ SpaceInEmptyBlock: false
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 1
 SpacesInAngles: Never
-SpacesInCStyleCastParentheses: false
 SpacesInConditionalStatement: false
 SpacesInContainerLiterals: false
+SpacesInCStyleCastParentheses: false
 SpacesInLineCommentPrefix:
     Minimum: 1
     Maximum: 1
@@ -188,3 +200,4 @@ TabWidth: 4
 TypenameMacros: []
 UseTab: Never
 WhitespaceSensitiveMacros: []
+
