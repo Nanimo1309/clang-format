@@ -150,7 +150,7 @@ QualifierOrder:
     ]
 ReferenceAlignment: Left
 ReflowComments: true
-RemoveBracesLLVM: true
+RemoveBracesLLVM: false
 RemoveSemicolon: true
 RequiresClausePosition: OwnLine
 RequiresExpressionIndentation: OuterScope
